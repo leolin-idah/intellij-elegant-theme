@@ -2,14 +2,52 @@
   "name": "Elegant Islands Dark",
   "dark": true,
   "author": "yx208",
+  "editorScheme": "/theme/islands-dark.theme.icls",
   "parentTheme": "Islands Dark",
   "colors": {
-    "dark": "#1f2226",
-    "editor": "#1a1c1f",
-    "transparent": "#00000000"
+    "transparent": "#00000000",
+
+    "ideBackground": "#25252b",
+    "editorBackground": "#1e1f21",
+    "editorOuterBorader": "#32333b",
+
+    "primary": "#006fee",
+    "primaryLight": "#006fee30",
+
+    "red": "#a42f4b",
+    "redLight": "#a42f4b30"
   },
   "ui": {
+    "StatusBar.borderColor": "transparent",
+    "MainToolbar.borderColor": "transparent",
 
+    "Island": {
+      "borderWidth": 6,
+      "borderWidth.compact": 5,
+      "borderColor": "editorBackground",
+      "arc": 24,
+      "arc.compact": 20
+    },
+
+    "ToolWindow": {
+      "Stripe.borderColor": "transparent",
+      "background": "editorBackground",
+      "Header.background": "red",
+      "Header.inactiveBackground": "editorBackground"
+    },
+
+    "MainWindow": {
+      "background": "ideBackground"
+    },
+
+    "EditorTabs": {
+      "background": "editorBackground",
+
+      "underlinedBorderColor": "primary",
+      "inactiveUnderlinedTabBorderColor": "red",
+      "underlinedTabBackground": "primaryLight",
+      "inactiveUnderlinedTabBackground": "redLight"
+    }
   },
   "icons": {
     "ColorPalette": {

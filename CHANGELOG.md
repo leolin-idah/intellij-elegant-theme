@@ -1,3 +1,7 @@
+## 2.0.0
+
+Refactor
+
 ## 1.3.1
 
 - Rust: Associated trait function call
