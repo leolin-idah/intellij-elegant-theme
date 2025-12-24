@@ -1,0 +1,19 @@
+{
+  "name": "Elegant Islands Dark",
+  "dark": true,
+  "author": "yx208",
+  "parentTheme": "Islands Dark",
+  "colors": {
+    "dark": "#1f2226",
+    "editor": "#1a1c1f",
+    "transparent": "#00000000"
+  },
+  "ui": {
+
+  },
+  "icons": {
+    "ColorPalette": {
+
+    }
+  }
+}
