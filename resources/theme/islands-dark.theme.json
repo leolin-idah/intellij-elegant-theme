@@ -7,8 +7,8 @@
   "colors": {
     "transparent": "#00000000",
 
-    "ideBackground": "#25252b",
-    "editorBackground": "#1e1f21",
+    "ideBackground": "#292b2e",
+    "editorBackground": "#202224",
     "editorOuterBorader": "#32333b",
 
     "primary": "#006fee",
