@@ -2,7 +2,7 @@
   "name": "Elegant Islands Dark",
   "dark": true,
   "author": "yx208",
-  "editorScheme": "/theme/islands-dark.theme.icls",
+  "editorScheme": "/theme/islands-dark.theme.xml",
   "parentTheme": "Islands Dark",
   "colors": {
     "transparent": "#00000000",

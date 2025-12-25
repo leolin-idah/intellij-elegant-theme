@@ -37,8 +37,8 @@
     <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
-        <themeProvider id="elegant-theme-dark" path="/theme/islands-dark.theme.json"/>
-        <colorScheme id="ElegantThemeDark" path="/theme/islands-dark.theme.xml" dark="true" />
+        <themeProvider id="elegant-islands-dark" path="/theme/islands-dark.theme.json"/>
+        <colorScheme id="ElegantIslandsDark" path="/theme/islands-dark.theme.xml" dark="true" />
 
         <themeProvider id="elegant-theme-dark" path="/theme/elegant-dark.theme.json"/>
         <colorScheme id="ElegantThemeDark" path="/theme/elegant-dark.theme.xml" dark="true" />
