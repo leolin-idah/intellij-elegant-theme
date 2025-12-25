@@ -8,11 +8,14 @@
     "transparent": "#00000000",
 
     "ideBackground": "#292b2e",
-    "editorBackground": "#202224",
-    "editorOuterBorader": "#32333b",
+    "editorBackground": "#1f2024",
 
     "primary": "#006fee",
-    "primaryLight": "#006fee30",
+
+    "tabActiveBorder": "#006fee",
+    "tabActiveBackground": "#006fee30",
+    "tabInactiveBorder": "#424647",
+    "tabInactiveBackground": "#42464750",
 
     "red": "#a42f4b",
     "redLight": "#a42f4b30"
@@ -43,10 +46,10 @@
     "EditorTabs": {
       "background": "editorBackground",
 
-      "underlinedBorderColor": "primary",
-      "inactiveUnderlinedTabBorderColor": "red",
-      "underlinedTabBackground": "primaryLight",
-      "inactiveUnderlinedTabBackground": "redLight"
+      "underlinedBorderColor": "tabActiveBorder",
+      "inactiveUnderlinedTabBorderColor": "tabInactiveBorder",
+      "underlinedTabBackground": "tabActiveBackground",
+      "inactiveUnderlinedTabBackground": "tabInactiveBackground"
     }
   },
   "icons": {
