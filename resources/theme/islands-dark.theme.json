@@ -17,12 +17,23 @@
     "tabInactiveBorder": "#424647",
     "tabInactiveBackground": "#42464750",
 
+    "treeSelected": "#006fee60",
+    "treeInactive": "#42464780",
+
     "red": "#a42f4b",
     "redLight": "#a42f4b30"
   },
   "ui": {
     "StatusBar.borderColor": "transparent",
     "MainToolbar.borderColor": "transparent",
+
+    "Tree": {
+      "selectionBackground": "treeSelected",
+      "selectionInactiveBackground": "treeInactive",
+      "leftChildIndent": 6,
+      "rowHeight": 26,
+      "Selection.arc": 16
+    },
 
     "Island": {
       "borderWidth": 6,
