@@ -17,7 +17,7 @@
     "tabInactiveBorder": "#424647",
     "tabInactiveBackground": "#42464750",
 
-    "treeSelected": "#006fee60",
+    "treeSelected": "#006fee70",
     "treeInactive": "#42464780",
 
     "red": "#a42f4b",
@@ -30,7 +30,7 @@
     "Tree": {
       "selectionBackground": "treeSelected",
       "selectionInactiveBackground": "treeInactive",
-      "leftChildIndent": 6,
+      "leftChildIndent": 10,
       "rowHeight": 26,
       "Selection.arc": 12
     },

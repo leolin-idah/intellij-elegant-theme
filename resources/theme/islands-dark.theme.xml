@@ -216,6 +216,11 @@
         <option name="FOREGROUND" value="bcbec4" />
       </value>
     </option>
+    <option name="DEFAULT_CLASS_NAME">
+      <value>
+        <option name="FOREGROUND" value="b899" />
+      </value>
+    </option>
     <option name="DEFAULT_CLASS_REFERENCE">
       <value>
         <option name="FOREGROUND" value="bcbec4" />
@@ -284,6 +289,11 @@
     <option name="DEFAULT_INSTANCE_METHOD">
       <value>
         <option name="FOREGROUND" value="57aaf7" />
+      </value>
+    </option>
+    <option name="DEFAULT_INTERFACE_NAME">
+      <value>
+        <option name="FOREGROUND" value="b899" />
       </value>
     </option>
     <option name="DEFAULT_INVALID_STRING_ESCAPE">
