@@ -8,23 +8,30 @@
     "transparent": "#00000000",
 
     "ideBackground": "#292b2e",
-    "editorBackground": "#1b1d1f",
+    "editorBackground": "#1d1f21",
 
     "primary": "#006fee",
 
     "tabActiveBorder": "#006fee",
-    "tabActiveBackground": "#006fee20",
+    "tabActiveBackground": "#192739",
     "tabInactiveBorder": "#424647",
     "tabInactiveBackground": "#42464750",
 
-    "treeSelected": "#006fee70",
+    "treeSelected": "#0f4079",
     "treeInactive": "#42464780",
+
+    "listHover": "#0f4079",
+
+    "tooltipBorder": "#424647",
+    "tooltipBackground": "#282a2d",
 
     "red": "#a42f4b",
     "redLight": "#a42f4b30"
   },
   "ui": {
-    "StatusBar.borderColor": "transparent",
+    "StatusBar": {
+      "borderColor": "transparent"
+    },
     "MainToolbar.borderColor": "transparent",
 
     "Tree": {
@@ -41,6 +48,23 @@
       "borderColor": "editorBackground",
       "arc": 24,
       "arc.compact": 20
+    },
+
+    "List.selectionBackground": "listHover",
+    "MenuItem.selectionBackground": "listHover",
+    "PopupMenu.selectionBackground": "listHover",
+    "Menu.selectionBackground": "listHover",
+    "WelcomeScreen": {
+      "background": "editorBackground",
+      "Projects.selectionBackground": "listHover",
+      "Projects.actions.selectionBackground": "listHover",
+      "Projects.hoverBackground": "listHover"
+    },
+
+    "ToolTip": {
+      "borderColor": "tooltipBorder",
+      "background": "tooltipBackground",
+      "paintBorder": true
     },
 
     "ToolWindow": {
