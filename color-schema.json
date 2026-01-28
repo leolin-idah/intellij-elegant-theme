@@ -1,0 +1,13 @@
+{
+  "editorBackground": "#1d1f21",
+  "blue": {
+    "primary": "#006fee",
+    "decoration": "#2482ED"
+  },
+  "cyan": {
+    "primary": "#00b899"
+  },
+  "yellow": {
+    "highlight": "#FFEF28"
+  }
+}

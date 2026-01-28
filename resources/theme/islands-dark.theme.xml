@@ -1,7 +1,7 @@
 <scheme name="Elegant Islands Dark" version="142" parent_scheme="Darcula">
   <metaInfo>
     <property name="ide">idea</property>
-    <property name="ideVersion">2025.3.1.0.0</property>
+    <property name="ideVersion">2025.3.2.0.0</property>
   </metaInfo>
   <colors>
     <option name="ADDED_LINES_COLOR" value="549159" />
@@ -44,9 +44,9 @@
     <option name="INLINE_REFACTORING_SETTINGS_FOCUSED" value="393B40" />
     <option name="INLINE_REFACTORING_SETTINGS_HOVERED" value="393B40" />
     <option name="LINE_NUMBERS_COLOR" value="4B5059" />
-    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="56A8F5" />
+    <option name="LINE_NUMBER_ON_CARET_ROW_COLOR" value="2482ED" />
     <option name="LOOKUP_COLOR" value="27282B" />
-    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="006FEE" />
+    <option name="MATCHED_BRACES_INDENT_GUIDE_COLOR" value="2482ED" />
     <option name="METHOD_SEPARATORS_COLOR" value="43454A" />
     <option name="MODIFIED_LINES_COLOR" value="375FAD" />
     <option name="NOTIFICATION_BACKGROUND" value="25324D" />
@@ -654,6 +654,7 @@
     </option>
     <option name="MATCHED_BRACE_ATTRIBUTES">
       <value>
+        <option name="FOREGROUND" value="ffef28" />
         <option name="BACKGROUND" value="43454a" />
         <option name="FONT_TYPE" value="1" />
       </value>
