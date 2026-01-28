@@ -60,7 +60,7 @@
     "PopupMenu.selectionBackground": "listHover",
     "Menu.selectionBackground": "listHover",
     "WelcomeScreen": {
-      "background": "editorBackground",
+      "Details.background": "settingsBackground",
       "Projects.selectionBackground": "listHover",
       "Projects.actions.selectionBackground": "listHover",
       "Projects.hoverBackground": "listHover"
@@ -75,7 +75,6 @@
     "ToolWindow": {
       "Stripe.borderColor": "transparent",
       "background": "editorBackground",
-      "Header.background": "red",
       "Header.inactiveBackground": "editorBackground"
     },
 
