@@ -17,22 +17,27 @@
     "tabInactiveBorder": "#424647",
     "tabInactiveBackground": "#42464750",
 
-    "treeSelected": "#0f4079",
+    "treeSelected": "#06448c",
     "treeInactive": "#42464780",
 
-    "listHover": "#0f4079",
+    "listHover": "#06448c",
 
     "tooltipBorder": "#424647",
     "tooltipBackground": "#282a2d",
+
+    "settingsBackground": "#1d1f21",
 
     "red": "#a42f4b",
     "redLight": "#a42f4b30"
   },
   "ui": {
-    "StatusBar": {
-      "borderColor": "transparent"
-    },
+    "StatusBar.borderColor": "transparent",
     "MainToolbar.borderColor": "transparent",
+
+    "Panel.background": "settingsBackground",
+    "SidePanel.background": "settingsBackground",
+    "Button.background": "settingsBackground",
+    "CheckBox.background": "settingsBackground",
 
     "Tree": {
       "selectionBackground": "treeSelected",
