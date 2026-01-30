@@ -9,5 +9,8 @@
   },
   "yellow": {
     "highlight": "#FFEF28"
+  },
+  "grey": {
+    "cursorRow": "#252629"
   }
 }
