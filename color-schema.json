@@ -12,5 +12,8 @@
   },
   "grey": {
     "cursorRow": "#27292E"
+  },
+  "operation": {
+    "fade": "#6a7280"
   }
 }
