@@ -203,7 +203,7 @@
     </option>
     <option name="DEFAULT_BLOCK_COMMENT">
       <value>
-        <option name="FOREGROUND" value="7a7e85" />
+        <option name="FOREGROUND" value="6b7680" />
       </value>
     </option>
     <option name="DEFAULT_BRACES">
@@ -310,7 +310,7 @@
     </option>
     <option name="DEFAULT_LINE_COMMENT">
       <value>
-        <option name="FOREGROUND" value="7a7e85" />
+        <option name="FOREGROUND" value="6b7680" />
       </value>
     </option>
     <option name="DEFAULT_METADATA">
@@ -500,7 +500,7 @@
     </option>
     <option name="INLAY_DEFAULT">
       <value>
-        <option name="FOREGROUND" value="868a91" />
+        <option name="FOREGROUND" value="7f8694" />
         <option name="BACKGROUND" value="393b40" />
       </value>
     </option>
@@ -511,7 +511,7 @@
     </option>
     <option name="INLINE_PARAMETER_HINT">
       <value>
-        <option name="FOREGROUND" value="858a94" />
+        <option name="FOREGROUND" value="7f8694" />
         <option name="BACKGROUND" value="393b40" />
       </value>
     </option>
