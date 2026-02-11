@@ -18,7 +18,7 @@
     "tabInactiveBackground": "#42464750",
 
     "treeSelected": "#06448c",
-    "treeInactive": "#42464780",
+    "treeInactive": "#2b2e33",
 
     "listHover": "#06448c",
 
@@ -82,7 +82,6 @@
 
     "EditorTabs": {
       "background": "editorBackground",
-
       "underlinedBorderColor": "tabActiveBorder",
       "inactiveUnderlinedTabBorderColor": "tabInactiveBorder",
       "underlinedTabBackground": "tabActiveBackground",

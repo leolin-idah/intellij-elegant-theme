@@ -1,5 +1,6 @@
 {
   "editorBackground": "#1d1f21",
+  "defaultText": "#a7b4c2",
   "blue": {
     "primary": "#006fee",
     "decoration": "#2482ED"
@@ -11,7 +12,7 @@
     "highlight": "#FFEF28"
   },
   "grey": {
-    "cursorRow": "#27292E"
+    "cursorRow": "#25272B"
   },
   "operation": {
     "fade": "#6a7280"

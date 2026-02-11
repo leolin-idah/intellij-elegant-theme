@@ -8,7 +8,7 @@
     <option name="ANNOTATIONS_COLOR" value="8D9199" />
     <option name="ANNOTATIONS_LAST_COMMIT_COLOR" value="CED0D6" />
     <option name="CARET_COLOR" value="CED0D6" />
-    <option name="CARET_ROW_COLOR" value="27292E" />
+    <option name="CARET_ROW_COLOR" value="25272B" />
     <option name="CONSOLE_BACKGROUND_KEY" value="191A1C" />
     <option name="DELETED_LINES_COLOR" value="868A91" />
     <option name="DIFF_SEPARATORS_BACKGROUND" value="2B2D30" />
@@ -72,7 +72,7 @@
         <option name="EFFECT_TYPE" value="1" />
       </value>
     </option>
-    <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="DEFAULT_METADATA" />
+    <option name="ANNOTATION_NAME_ATTRIBUTES" baseAttributes="" />
     <option name="BAD_CHARACTER">
       <value>
         <option name="FOREGROUND" value="f75464" />
@@ -742,7 +742,7 @@
     </option>
     <option name="TEXT">
       <value>
-        <option name="FOREGROUND" value="bcbec4" />
+        <option name="FOREGROUND" value="a7b4c2" />
         <option name="BACKGROUND" value="1d1f21" />
       </value>
     </option>
