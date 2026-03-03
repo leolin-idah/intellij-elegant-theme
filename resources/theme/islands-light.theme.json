@@ -1,0 +1,29 @@
+{
+  "name": "Elegant Islands Light",
+  "dark": false,
+  "author": "yx208",
+  "editorScheme": "/theme/islands-light.theme.xml",
+  "parentTheme": "Islands Light",
+  "colors": {
+  },
+  "ui": {
+    "Tree.background": "red",
+    "Tree": {
+      "selectionBackground": "treeSelected",
+      "selectionInactiveBackground": "treeInactive",
+      "leftChildIndent": 10,
+      "rowHeight": 26,
+      "Selection.arc": 12
+    },
+    "Island": {
+      "borderWidth": 6,
+      "borderWidth.compact": 5,
+      "borderColor": "editorBackground",
+      "arc": 24,
+      "arc.compact": 20
+    }
+  },
+  "icons": {
+    "ColorPalette": {}
+  }
+}
