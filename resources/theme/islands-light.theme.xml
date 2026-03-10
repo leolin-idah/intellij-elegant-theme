@@ -450,7 +450,7 @@
     <option name="TEXT">
       <value>
         <option name="FOREGROUND" value="80808" />
-        <option name="BACKGROUND" value="fefefe" />
+        <option name="BACKGROUND" value="fdfdfd" />
       </value>
     </option>
     <option name="TEXT_SEARCH_RESULT_ATTRIBUTES">

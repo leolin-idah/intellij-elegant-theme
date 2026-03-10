@@ -5,9 +5,16 @@
   "editorScheme": "/theme/islands-light.theme.xml",
   "parentTheme": "Islands Light",
   "colors": {
+    "transparent": "#00000000",
+    "editorBackground": "#fdfdfd",
+    "red": "#ff0000"
   },
   "ui": {
-    "Tree.background": "red",
+    "ToolWindow": {
+      "background": "editorBackground",
+      "Header.background": "editorBackground",
+      "Header.inactiveBackground": "editorBackground"
+    },
     "Tree": {
       "selectionBackground": "treeSelected",
       "selectionInactiveBackground": "treeInactive",
