@@ -12,6 +12,9 @@
 
     "primary": "#006fee",
 
+    "scrollBackground": "#1D1F21FF",
+    "scrollThumb": "#292B2eFF",
+
     "tabActiveBorder": "#006fee",
     "tabActiveBackground": "#192739",
     "tabInactiveBorder": "#424647",
@@ -38,6 +41,22 @@
     "SidePanel.background": "settingsBackground",
     "Button.background": "settingsBackground",
     "CheckBox.background": "settingsBackground",
+
+    "ScrollBar": {
+      "background": "scrollBackground",
+      "thumbColor": "#4C5052FF",
+      "thumbBorderColor": "#4C5052FF",
+      "hoverThumbColor": "#6B6F73FF",
+      "hoverThumbBorderColor": "#6B6F73FF",
+      "trackColor": "#2B2D30FF",
+
+      "Mac.thumbColor": "#4C5052FF",
+      "Mac.thumbBorderColor": "#4C505200",
+      "Mac.hoverThumbColor": "#6B6F73CC",
+      "Mac.hoverThumbBorderColor": "#6B6F7300",
+      "Mac.Transparent.thumbColor": "#4C505299",
+      "Mac.Transparent.hoverThumbColor": "#6B6F7399"
+    },
 
     "Tree": {
       "selectionBackground": "treeSelected",
