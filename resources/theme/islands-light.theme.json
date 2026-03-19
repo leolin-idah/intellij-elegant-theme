@@ -6,7 +6,7 @@
   "parentTheme": "Islands Light",
   "colors": {
     "transparent": "#00000000",
-    "editorBackground": "#fdfdfd",
+    "editorBackground": "#fefefe",
     "red": "#ff0000"
   },
   "ui": {
