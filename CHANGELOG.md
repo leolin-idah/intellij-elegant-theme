@@ -1,6 +1,6 @@
 ## 2.0.0
 
-Refactor
+Based on the solid color scheme of JetBrains' latest Islands theme, I have made a few adjustments specifically to optimize the Islands Dark experience.
 
 ## 1.3.1
 

@@ -20,6 +20,8 @@
     "tabInactiveBorder": "#424647",
     "tabInactiveBackground": "#42464750",
 
+    "comboboxDisabledForeground": "#424647",
+
     "treeSelected": "#06448c",
     "treeInactive": "#2b2e33",
 
@@ -30,8 +32,12 @@
 
     "settingsBackground": "#1d1f21",
 
-    "red": "#a42f4b",
-    "redLight": "#a42f4b30"
+    "red": "#e80854",
+    "redDeep": "#990536",
+    "redLight": "#a42f4b30",
+
+    "green": "#009460",
+    "greenDeep": "#008F5D"
   },
   "ui": {
     "StatusBar.borderColor": "transparent",
@@ -108,7 +114,21 @@
     },
 
     "TextArea.background": "editorBackground",
-    "TextField.background": "editorBackground"
+    "TextField.background": "editorBackground",
+
+    "ComboBox": {
+      "nonEditableBackground": "settingsBackground",
+      "disabledForeground": "comboboxDisabledForeground",
+      "disabledBackground": "settingsBackground",
+      "ArrowButton": {
+        "background": "settingsBackground",
+        "nonEditableBackground": "settingsBackground"
+      }
+    },
+    "Content.background": "settingsBackground",
+    "Table.background": "settingsBackground",
+    "TextPane.background": "settingsBackground",
+    "SettingsTree.rowHeight": 26
   },
   "icons": {
     "ColorPalette": {
