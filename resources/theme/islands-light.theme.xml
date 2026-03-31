@@ -1,4 +1,4 @@
-<scheme name="Elegant Islands Light(Beta)" version="142" parent_scheme="Default">
+<scheme name="Elegant Islands Light" version="142" parent_scheme="Default">
   <metaInfo>
     <property name="ide">WebStorm</property>
     <property name="ideVersion">2026.1.0.0</property>
@@ -365,6 +365,11 @@
         <option name="FOREGROUND" value="336ecc" />
       </value>
     </option>
+    <option name="HTML_ATTRIBUTE_NAME">
+      <value>
+        <option name="FOREGROUND" value="80808" />
+      </value>
+    </option>
     <option name="HYPERLINK_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="6dcc" />
@@ -413,16 +418,13 @@
         <option name="FOREGROUND" value="830091" />
       </value>
     </option>
+    <option name="JS.INSTANCE_MEMBER_FUNCTION" baseAttributes="DEFAULT_INSTANCE_METHOD" />
     <option name="JS.JSX_CLIENT_COMPONENT">
       <value>
         <option name="FOREGROUND" value="ad6339" />
       </value>
     </option>
-    <option name="JS.LOCAL_VARIABLE">
-      <value>
-        <option name="FOREGROUND" value="2a8c7c" />
-      </value>
-    </option>
+    <option name="JS.LOCAL_VARIABLE" baseAttributes="DEFAULT_LOCAL_VARIABLE" />
     <option name="JS.REGEXP">
       <value>
         <option name="FOREGROUND" value="264eff" />
@@ -512,6 +514,11 @@
     <option name="WRONG_REFERENCES_ATTRIBUTES">
       <value>
         <option name="FOREGROUND" value="f50000" />
+      </value>
+    </option>
+    <option name="XML_ATTRIBUTE_NAME">
+      <value>
+        <option name="FOREGROUND" value="80808" />
       </value>
     </option>
     <option name="XML_CUSTOM_TAG_NAME">
