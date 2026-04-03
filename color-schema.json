@@ -14,7 +14,8 @@
   "grey": {
     "inlineHint": "#7F8694",
     "commentLine": "#6B7680",
-    "cursorRow": "#25272B"
+    "cursorRow": "#25272B",
+    "matchedBraceGuideLine": "#7B858F"
   },
   "operation": {
     "fade": "#6a7280"
