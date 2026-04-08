@@ -1,0 +1,138 @@
+{
+  "name": "Elegant Islands Dark",
+  "dark": true,
+  "author": "yx208",
+  "editorScheme": "/theme/islands-dark.theme.xml",
+  "parentTheme": "Islands Dark",
+  "colors": {
+    "transparent": "#00000000",
+
+    "ideBackground": "#292b2e",
+    "editorBackground": "#1d1f21",
+
+    "primary": "#006fee",
+
+    "scrollBackground": "#1D1F21FF",
+    "scrollThumb": "#292B2eFF",
+
+    "tabActiveBorder": "#006fee",
+    "tabActiveBackground": "#192739",
+    "tabInactiveBorder": "#424647",
+    "tabInactiveBackground": "#42464750",
+
+    "comboboxDisabledForeground": "#424647",
+
+    "treeSelected": "#06448c",
+    "treeInactive": "#2b2e33",
+
+    "listHover": "#06448c",
+
+    "tooltipBorder": "#424647",
+    "tooltipBackground": "#282a2d",
+
+    "settingsBackground": "#1d1f21",
+
+    "red": "#e80854",
+    "redDeep": "#990536",
+    "redLight": "#a42f4b30",
+
+    "green": "#009460",
+    "greenDeep": "#008F5D"
+  },
+  "ui": {
+    "StatusBar.borderColor": "transparent",
+    "MainToolbar.borderColor": "transparent",
+
+    "Panel.background": "settingsBackground",
+    "SidePanel.background": "settingsBackground",
+    "Button.background": "settingsBackground",
+    "CheckBox.background": "settingsBackground",
+
+    "ScrollBar": {
+      "background": "scrollBackground",
+      "thumbColor": "#4C5052FF",
+      "thumbBorderColor": "#4C5052FF",
+      "hoverThumbColor": "#6B6F73FF",
+      "hoverThumbBorderColor": "#6B6F73FF",
+      "trackColor": "#2B2D30FF",
+
+      "Mac.thumbColor": "#4C5052FF",
+      "Mac.thumbBorderColor": "#4C505200",
+      "Mac.hoverThumbColor": "#6B6F73CC",
+      "Mac.hoverThumbBorderColor": "#6B6F7300",
+      "Mac.Transparent.thumbColor": "#4C505299",
+      "Mac.Transparent.hoverThumbColor": "#6B6F7399"
+    },
+
+    "Tree": {
+      "selectionBackground": "treeSelected",
+      "selectionInactiveBackground": "treeInactive",
+      "leftChildIndent": 10,
+      "rowHeight": 26,
+      "Selection.arc": 12
+    },
+
+    "Island": {
+      "borderWidth": 6,
+      "borderWidth.compact": 5,
+      "borderColor": "editorBackground",
+      "arc": 24,
+      "arc.compact": 20
+    },
+
+    "List.selectionBackground": "listHover",
+    "MenuItem.selectionBackground": "listHover",
+    "PopupMenu.selectionBackground": "listHover",
+    "Menu.selectionBackground": "listHover",
+    "WelcomeScreen": {
+      "Details.background": "settingsBackground",
+      "Projects.selectionBackground": "listHover",
+      "Projects.actions.selectionBackground": "listHover",
+      "Projects.hoverBackground": "listHover"
+    },
+
+    "ToolTip": {
+      "borderColor": "tooltipBorder",
+      "background": "tooltipBackground",
+      "paintBorder": true
+    },
+
+    "ToolWindow": {
+      "Stripe.borderColor": "transparent",
+      "background": "editorBackground",
+      "Header.inactiveBackground": "editorBackground"
+    },
+
+    "MainWindow.Tab.selectedBackground": "settingsBackground",
+
+    "EditorTabs": {
+      "background": "editorBackground",
+      "underlinedBorderColor": "tabActiveBorder",
+      "inactiveUnderlinedTabBorderColor": "tabInactiveBorder",
+      "underlinedTabBackground": "tabActiveBackground",
+      "inactiveUnderlinedTabBackground": "tabInactiveBackground"
+    },
+
+    "TextArea.background": "editorBackground",
+    "TextField.background": "editorBackground",
+
+    "ComboBox": {
+      "nonEditableBackground": "settingsBackground",
+      "disabledForeground": "comboboxDisabledForeground",
+      "disabledBackground": "settingsBackground",
+      "ArrowButton": {
+        "background": "settingsBackground",
+        "nonEditableBackground": "settingsBackground"
+      }
+    },
+    "Content.background": "settingsBackground",
+    "Table.background": "settingsBackground",
+    "TextPane.background": "settingsBackground",
+    "SettingsTree.rowHeight": 26
+  },
+  "icons": {
+    "ColorPalette": {
+
+    }
+  }
+}

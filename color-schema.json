@@ -1,0 +1,23 @@
+{
+  "editorBackground": "#1d1f21",
+  "defaultText": "#a7b4c2",
+  "blue": {
+    "primary": "#006fee",
+    "decoration": "#2482ED"
+  },
+  "cyan": {
+    "primary": "#00b899"
+  },
+  "yellow": {
+    "highlight": "#FFEF28"
+  },
+  "grey": {
+    "inlineHint": "#7F8694",
+    "commentLine": "#6B7680",
+    "cursorRow": "#25272B",
+    "matchedBraceGuideLine": "#7B858F"
+  },
+  "operation": {
+    "fade": "#6a7280"
+  }
+}

@@ -235,6 +235,17 @@
       "Orange": "dark",
       "Rose": "dark"
     },
+    "TrialWidget": {
+      "Active.borderColor": "greenDeep",
+      "Active.foreground": "greenDeep",
+      "Active.hoverBorderColor": "green",
+      "Active.hoverBackground": "green",
+      "Active.hoverForeground": "white"
+    },
+    "MainWindow.Tab.background": "dark",
+    "MainWindow.Tab.borderColor": "gray2",
+    "MainWindow.Tab.selectedBackground": "gray",
+    "MainWindow.Tab.hoverBackground": "",
     "TextField.inactiveForeground": "gray3",
     "Label.disabledForeground": "gray3",
     "RadioButton.disabledText": "gray3"
