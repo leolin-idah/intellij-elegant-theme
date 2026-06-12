@@ -128,7 +128,12 @@
     "Content.background": "settingsBackground",
     "Table.background": "settingsBackground",
     "TextPane.background": "settingsBackground",
-    "SettingsTree.rowHeight": 26
+    "SettingsTree.rowHeight": 26,
+
+    "RadioButton.background": "settingsBackground",
+    "RadioButtonMenuItem.background": "settingsBackground",
+    "RadioButtonMenuItem.disabledBackground": "settingsBackground",
+    "TableHeader.background": "settingsBackground"
   },
   "icons": {
     "ColorPalette": {

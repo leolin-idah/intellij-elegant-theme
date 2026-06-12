@@ -1,3 +1,7 @@
+## 2.0.1
+
+Optimize the UI display of the settings panel.
+
 ## 2.0.0
 
 Based on the solid color scheme of JetBrains' latest Islands theme, I have made a few adjustments specifically to optimize the Islands Dark experience.
