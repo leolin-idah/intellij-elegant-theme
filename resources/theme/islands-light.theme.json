@@ -16,8 +16,6 @@
       "Header.inactiveBackground": "editorBackground"
     },
     "Tree": {
-      "selectionBackground": "treeSelected",
-      "selectionInactiveBackground": "treeInactive",
       "leftChildIndent": 10,
       "rowHeight": 26,
       "Selection.arc": 12
