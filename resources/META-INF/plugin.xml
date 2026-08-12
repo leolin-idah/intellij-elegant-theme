@@ -2,7 +2,7 @@
 <idea-plugin>
     <!-- Unique identifier of the plugin. It should be FQN. It cannot be changed between the plugin versions. -->
     <id>elegant-theme</id>
-    <version>2.0.2</version>
+    <version>2.1.0</version>
 
     <!-- Public plugin name should be written in Title Case.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-name -->
@@ -39,6 +39,9 @@
     <extensions defaultExtensionNs="com.intellij">
         <themeProvider id="elegant-islands-light" path="/theme/islands-light.theme.json"/>
         <colorScheme id="ElegantIslandsLight" path="/theme/islands-light.theme.xml" />
+
+        <themeProvider id="elegant-ink-light" path="/theme/ink-light.theme.json"/>
+        <colorScheme id="ElegantInkLight" path="/theme/ink-light.theme.xml" />
 
         <themeProvider id="elegant-islands-dark" path="/theme/islands-dark.theme.json"/>
         <colorScheme id="ElegantIslandsDark" path="/theme/islands-dark.theme.xml" dark="true" />

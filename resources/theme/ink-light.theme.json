@@ -1,0 +1,124 @@
+{
+  "name": "Elegant Ink Light(Beta)",
+  "dark": false,
+  "author": "yx208",
+  "editorScheme": "/theme/ink-light.theme.xml",
+  "parentTheme": "Islands Light",
+  "colors": {
+    "editorBackground": "#F6F0DF",
+
+    "layer-0-bg": "#EAE2CC",
+    "layer-0-border": "#CFC6AC",
+    "layer-1-bg": "#F1EAD6",
+    "layer-1-bg-inline": "#F9F4E6",
+    "layer-1-border-inline": "#EAE2CC",
+    "layer-2-bg": "#F6F0DF",
+    "layer-2-bg-inline": "#F9F4E6",
+    "layer-2-border": "#EAE2CC",
+    "layer-2-border-inline": "#EAE2CC",
+    "main-window-bg-alt": "#E6DDC5",
+    "tool-window-bg-alt": "#F2ECDA",
+    "editor-border-alt": "#E6DEC8",
+
+    "text-default": "#3B3A36",
+    "text-muted": "#5A5548",
+    "text-secondary": "#6B675E",
+    "text-disabled": "#9B937B",
+    "text-over-accent": "#F6F0DF",
+    "text-link": "#3D6A78",
+    "text-error": "#B3554A",
+    "text-warning": "#886715",
+    "text-success": "#557441",
+    "editor-text": "#3B3A36",
+
+    "accent-brand-bg": "#44546B",
+    "accent-brand-border": "#44546B",
+    "accent-brand-bg-secondary": "#EFF2EE",
+    "accent-brand-border-secondary": "#C7D2D6",
+    "accent-error-bg": "#BC6050",
+    "accent-error-border": "#BC6050",
+    "accent-error-bg-secondary": "#F8EEE6",
+    "accent-error-border-secondary": "#E2B5A7",
+    "accent-warning-bg": "#A17C22",
+    "accent-warning-border": "#A17C22",
+    "accent-warning-bg-secondary": "#F7EDD2",
+    "accent-warning-border-secondary": "#DEC584",
+    "accent-success-bg": "#698851",
+    "accent-success-border": "#698851",
+    "accent-success-bg-secondary": "#F1F4E6",
+    "accent-success-border-secondary": "#C1CFA9",
+    "accent-neutral-bg": "#867E68",
+    "accent-ai-bg": "#EADFE5",
+    "accent-ai-border": "#A07E93",
+
+    "control-border": "#CFC6AC",
+    "control-border-disabled": "#DDD4BB",
+    "control-border-raised": "#B1A88F",
+    "control-bg-small": "#DDD4BB",
+    "control-error-border-secondary": "#E2B5A7",
+    "control-warning-border-secondary": "#DEC584",
+    "toggle-off-bg": "#F9F4E6",
+    "toggle-button-bg": "#C0B79E",
+    "toggle-border": "#C0B79E",
+
+    "toolbar-selected-bg": "#DDE3E4",
+    "toolbar-selected-bg-hovered": "#C7D2D6",
+
+    "selection-bg-active": "#DDE3E4",
+    "selection-bg-active-muted": "#E5EAE5",
+    "selection-bg-inactive": "#EAE4D2",
+    "tab-selected-bg-active": "#E2E7ED",
+    "tab-selected-bg-inactive": "#F1EAD6",
+    "tab-selected-border-active": "#44546B",
+    "tab-selected-border-inactive": "#CFC6AC",
+    "tab-file-color-mask-bg": "#F6F0DF80",
+
+    "search-match-bg": "#F0DFA6",
+    "popup-completion-match-text": "#3D6A78",
+    "presentation-assistant-bg": "#27251F",
+    "icon-default-stroke": "#6B675E",
+    "icon-over-accent": "#F6F0DF"
+  },
+  "ui": {
+    "ToolWindow": {
+      "background": "editorBackground",
+      "Header.background": "editorBackground",
+      "Header.inactiveBackground": "editorBackground"
+    },
+    "Tree": {
+      "leftChildIndent": 10,
+      "rowHeight": 26,
+      "Selection.arc": 12
+    },
+    "Island": {
+      "borderWidth": 6,
+      "borderWidth.compact": 5,
+      "borderColor": "editorBackground",
+      "arc": 24,
+      "arc.compact": 20
+    },
+    "EditorTabs.underlinedTabBackground": "layer-0-bg",
+    "Editor.ToolTip.selectionBackground": "#EAE2CC",
+    "List.Tag.background": "#E4DBC2",
+    "Tag.background": "#E4DBC2",
+    "Plugins": {
+      "background": "layer-2-bg",
+      "SectionHeader.background": "layer-1-bg",
+      "SectionHeader.foreground": "text-secondary",
+      "lightSelectionBackground": "selection-bg-active-muted",
+      "tagBackground": "#E4DBC2"
+    },
+    "FileColor": {
+      "Yellow": "#F3E8C8",
+      "Green": "#E9EDD8",
+      "Orange": "#F0E2CC",
+      "Rose": "#F1DFD6",
+      "Violet": "#ECE2E7",
+      "Blue": "#E1E9E6",
+      "Gray": "#EBE5D3"
+    }
+  },
+  "icons": {
+    "ColorPalette": {}
+  }
+}
