@@ -28,7 +28,8 @@
     <!-- Short summary of new features and bugfixes in the latest plugin version.
          Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
     <change-notes><![CDATA[
-        See CHANGELOG.md for details
+        <p>Add new theme: <b>Elegant Ink Light (Beta)</b> — an eye-friendly ink-wash style light theme based on Islands Light: ink-tone text and low-saturation traditional Chinese colors on warm rice-paper backgrounds.</p>
+        <p>Full release notes: <a href="https://github.com/yx208/elegant-theme/blob/main/_docs/design-2.1.0.en.md">_docs/design-2.1.0.en.md</a></p>
     ]]></change-notes>
 
     <!-- Product and plugin compatibility requirements.
