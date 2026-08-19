@@ -51,6 +51,9 @@
     `Menu.Selection.outerInsets` 上下值 1px → 2px（弹出菜单每项增高
     2px）；Settings 左侧导航树显式定行高 `SettingsTree.rowHeight` = 27
     （默认未定义、按渲染器自适应，偏紧）。本主题仅有的度量改动。
+14. **更新通知机制**：新增本插件唯一的源码类，安装/更新后首次打开项目时
+    弹一条本版要点通知，每个版本只弹一次（见「更新通知机制」一节）。
+    插件最低兼容版本随之由 2021.1（211）提升至 2022.3（223）。
 
 ## 构成
 
@@ -58,7 +61,8 @@
 |---|---|
 | `resources/theme/ink-light.theme.json` | UI 主题，`parentTheme: "Islands Light"` |
 | `resources/theme/ink-light.theme.xml` | 编辑器配色，`parent_scheme="Default"`，键位对照 `islands-light.theme.xml` 全量改色 |
-| `plugin.xml` | 注册 `elegant-ink-light` themeProvider + `ElegantInkLight` colorScheme |
+| `plugin.xml` | 注册 `elegant-ink-light` themeProvider + `ElegantInkLight` colorScheme，以及更新通知的 `notificationGroup` + `postStartupActivity` |
+| `src/com/github/yx208/eleganttheme/UpdateNotificationActivity.java` | 更新通知启动活动，本插件唯一源码（见「更新通知机制」） |
 
 ## 核心机制：覆盖父主题语义色板
 
@@ -332,6 +336,28 @@ ProgressBar 渐变端点父主题硬编码 ramp 色（`blue-120` 等），ramp t
 `#9FB3CC`（与 tab 描边同值取家族一致，刻意不建共享 token 避免语义耦合）、
 成功端 `#A3CFAE` → `accent-success-border-secondary`、失败端 `#FFB0B2` →
 `accent-error-border-secondary`。
+
+## 更新通知机制
+
+2.1.0 起插件带有唯一一个源码类
+`src/com/github/yx208/eleganttheme/UpdateNotificationActivity.java`
+（`plugin.xml` 注册 `notificationGroup`「Elegant Theme Updates」+
+`postStartupActivity`）：安装或更新后首次打开项目时弹一条驻留通知
+（STICKY_BALLOON）展示本版要点；应用级 `PropertiesComponent` 记录
+「上次已通知版本」，每个版本只弹一次，首装与更新的标题措辞不同。
+
+发版约定与硬约束：
+
+- **通知正文 = change-notes 的第一个 `<p>`**。每次发版把版本亮点写在
+  第一个 `<p>`，且其中不放 `<a>` 链接（通知内不可点击）；后续段落不受限。
+- 「Full release notes」按钮按版本号拼接
+  `https://github.com/yx208/elegant-theme/blob/main/_docs/design-<version>.en.md`，
+  发版时英文设计文档必须已在 main 上。
+- `since-build` 随本功能由 211 提升为 **223**：源码按项目语言级别
+  **Java 17** 编译，2022.3 起的 IDE 运行于 JBR 17，可加载 Java 17 字节码
+  （更老的 IDE 运行于 JBR 11，会 `UnsupportedClassVersionError`）。编译需把
+  Project SDK 设为 IntelliJ Platform Plugin SDK（普通 JDK 没有平台类）。
+- 只可使用 2022.3 与最新平台**同时存在**的 API。
 
 ## 维护指南
 

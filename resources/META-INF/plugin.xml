@@ -12,7 +12,7 @@
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
     <vendor email="yuanxian208200@gmail.com" url="https://github.com/yx208">yx208</vendor>
 
-    <idea-version since-build="211" />
+    <idea-version since-build="223" />
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
@@ -29,6 +29,7 @@
          Displayed on the Plugin Page and IDE Plugin Manager. Simple HTML elements can be included between <![CDATA[  ]]> tags. -->
     <change-notes><![CDATA[
         <p>Add new theme: <b>Elegant Ink Light (Beta)</b> — an eye-friendly ink-wash style light theme based on Islands Light: ink-tone text and low-saturation traditional Chinese colors on warm rice-paper backgrounds.</p>
+        <p>New: after installing or updating the plugin, a one-time notification now shows the release highlights. The minimum supported IDE version is now 2022.3.</p>
         <p>Full release notes: <a href="https://github.com/yx208/elegant-theme/blob/main/_docs/design-2.1.0.en.md">_docs/design-2.1.0.en.md</a></p>
     ]]></change-notes>
 
@@ -38,6 +39,9 @@
     <depends>com.intellij.modules.lang</depends>
 
     <extensions defaultExtensionNs="com.intellij">
+        <notificationGroup id="Elegant Theme Updates" displayType="STICKY_BALLOON"/>
+        <postStartupActivity implementation="com.github.yx208.eleganttheme.UpdateNotificationActivity"/>
+
         <themeProvider id="elegant-islands-light" path="/theme/islands-light.theme.json"/>
         <colorScheme id="ElegantIslandsLight" path="/theme/islands-light.theme.xml" />
 

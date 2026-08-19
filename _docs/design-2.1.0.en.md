@@ -74,6 +74,11 @@ The changes that landed in 2.1.0 (details in the sections below):
     1px → 2px (each popup menu item gains 2px); the Settings navigation
     tree gets an explicit `SettingsTree.rowHeight` = 27 (undefined by
     default — renderer-sized and cramped). The theme's only metric changes.
+14. **Update notification mechanism**: adds the plugin's single source
+    class; the first project open after an install/update shows a one-time
+    release-highlights notification, once per version (see "Update
+    notification mechanism"). The minimum supported IDE accordingly moves
+    from 2021.1 (211) to 2022.3 (223).
 
 ## Structure
 
@@ -81,7 +86,8 @@ The changes that landed in 2.1.0 (details in the sections below):
 |---|---|
 | `resources/theme/ink-light.theme.json` | UI theme, `parentTheme: "Islands Light"` |
 | `resources/theme/ink-light.theme.xml` | Editor scheme, `parent_scheme="Default"`, recolored key-for-key against `islands-light.theme.xml` |
-| `plugin.xml` | Registers the `elegant-ink-light` themeProvider + `ElegantInkLight` colorScheme |
+| `plugin.xml` | Registers the `elegant-ink-light` themeProvider + `ElegantInkLight` colorScheme, plus the update notification's `notificationGroup` + `postStartupActivity` |
+| `src/com/github/yx208/eleganttheme/UpdateNotificationActivity.java` | Update-notification startup activity, the plugin's only source file (see "Update notification mechanism") |
 
 ## Core mechanism: overriding the parent theme's semantic palette
 
@@ -405,6 +411,35 @@ explicit ui keys patch them precisely: indeterminate start `#A7C5FF` → pale
 deliberately not extracted into a shared token to avoid semantic coupling),
 passed end `#A3CFAE` → `accent-success-border-secondary`, failed end
 `#FFB0B2` → `accent-error-border-secondary`.
+
+## Update notification mechanism
+
+Starting with 2.1.0 the plugin carries its single source class,
+`src/com/github/yx208/eleganttheme/UpdateNotificationActivity.java`
+(registered in `plugin.xml` as the "Elegant Theme Updates"
+`notificationGroup` plus a `postStartupActivity`): on the first project
+open after an install or update it shows one sticky notification
+(STICKY_BALLOON) with the release highlights; the last-notified version is
+stored application-wide in `PropertiesComponent`, so each version notifies
+exactly once, with different titles for fresh installs and updates.
+
+Release conventions and hard constraints:
+
+- **The notification body is the first `<p>` of the change-notes.** Put the
+  release headline in that first `<p>` on every release and keep `<a>`
+  links out of it (they are not clickable there); later paragraphs are
+  unrestricted.
+- The "Full release notes" button builds its URL from the plugin version:
+  `https://github.com/yx208/elegant-theme/blob/main/_docs/design-<version>.en.md`
+  must exist on `main` when the version ships.
+- `since-build` was raised from 211 to **223** together with this feature:
+  the source compiles at the project language level (**Java 17**), and
+  2022.3+ IDEs run on JBR 17 and can load Java 17 bytecode (older IDEs run
+  on JBR 11 and fail with `UnsupportedClassVersionError`). Compiling
+  requires the Project SDK to be an IntelliJ Platform Plugin SDK (a plain
+  JDK has no platform classes).
+- Only APIs that exist in **both** 2022.3 and current platforms may be
+  used.
 
 ## Maintenance guide
 

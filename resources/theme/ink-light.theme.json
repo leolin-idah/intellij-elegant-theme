@@ -108,6 +108,10 @@
       "borderColor": "layer-2-border"
     },
     "DefaultTabs.borderColor": "layer-2-border",
+    "ActionButton": {
+      "pressedBackground": "toolbar-selected-bg",
+      "pressedBorderColor": "accent-brand-border-secondary"
+    },
     "Button": {
       "startBackground": "layer-1-bg-inline",
       "endBackground": "layer-1-bg-inline",
