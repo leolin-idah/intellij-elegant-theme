@@ -1,13 +1,12 @@
 package com.github.yx208.eleganttheme;
 
 import com.intellij.ide.BrowserUtil;
-import com.intellij.ide.plugins.IdeaPluginDescriptor;
-import com.intellij.ide.plugins.PluginManagerCore;
+import com.intellij.ide.plugins.cl.PluginAwareClassLoader;
 import com.intellij.ide.util.PropertiesComponent;
 import com.intellij.notification.NotificationAction;
 import com.intellij.notification.NotificationGroupManager;
 import com.intellij.notification.NotificationType;
-import com.intellij.openapi.extensions.PluginId;
+import com.intellij.openapi.extensions.PluginDescriptor;
 import com.intellij.openapi.project.Project;
 import com.intellij.openapi.startup.StartupActivity;
 import org.jetbrains.annotations.NotNull;
@@ -20,7 +19,9 @@ import java.util.regex.Pattern;
  * Shows a one-time release-highlights notification after the plugin is installed or updated.
  *
  * Compatibility: since-build is 223, so only APIs present in both 2022.3 and current platforms
- * may be used.
+ * may be used. The plugin's own descriptor is read off this class's PluginAwareClassLoader —
+ * the PluginManagerCore/PluginManager descriptor lookups are all ApiStatus.Internal and are
+ * rejected by Marketplace compatibility verification.
  *
  * The notification body is the first &lt;p&gt; of the change-notes in plugin.xml — put the
  * release headline there and keep it free of &lt;a&gt; links (they are not clickable here).
@@ -29,7 +30,6 @@ import java.util.regex.Pattern;
  */
 public final class UpdateNotificationActivity implements StartupActivity.DumbAware {
 
-    private static final String PLUGIN_ID = "elegant-theme";
     private static final String LAST_NOTIFIED_VERSION_KEY = "elegant.theme.last.notified.version";
     private static final String RELEASE_NOTES_URL_TEMPLATE =
             "https://github.com/yx208/elegant-theme/blob/main/_docs/design-%s.en.md";
@@ -38,7 +38,7 @@ public final class UpdateNotificationActivity implements StartupActivity.DumbAwa
 
     @Override
     public void runActivity(@NotNull Project project) {
-        IdeaPluginDescriptor plugin = PluginManagerCore.getPlugin(PluginId.getId(PLUGIN_ID));
+        PluginDescriptor plugin = findOwnDescriptor();
         if (plugin == null || plugin.getVersion() == null) {
             return;
         }
@@ -58,6 +58,14 @@ public final class UpdateNotificationActivity implements StartupActivity.DumbAwa
                 .notify(project);
     }
 
+    @Nullable
+    private static PluginDescriptor findOwnDescriptor() {
+        ClassLoader classLoader = UpdateNotificationActivity.class.getClassLoader();
+        return classLoader instanceof PluginAwareClassLoader
+                ? ((PluginAwareClassLoader) classLoader).getPluginDescriptor()
+                : null;
+    }
+
     /**
      * Marks the current version as notified and returns what was stored before; synchronized so
      * that projects opening concurrently at IDE start produce a single notification.
@@ -73,7 +81,7 @@ public final class UpdateNotificationActivity implements StartupActivity.DumbAwa
     }
 
     @NotNull
-    private static String releaseHighlights(@NotNull IdeaPluginDescriptor plugin) {
+    private static String releaseHighlights(@NotNull PluginDescriptor plugin) {
         String changeNotes = plugin.getChangeNotes();
         if (changeNotes == null) {
             return "See the plugin page for what's new in this release.";
