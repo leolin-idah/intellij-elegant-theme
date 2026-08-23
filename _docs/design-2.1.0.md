@@ -358,24 +358,3 @@ ProgressBar 渐变端点父主题硬编码 ramp 色（`blue-120` 等），ramp t
   （更老的 IDE 运行于 JBR 11，会 `UnsupportedClassVersionError`）。编译需把
   Project SDK 设为 IntelliJ Platform Plugin SDK（普通 JDK 没有平台类）。
 - 只可使用 2022.3 与最新平台**同时存在**的 API。
-
-## 维护指南
-
-后续调色 / 排查「某区域还是冷灰」时：
-
-1. 解包官方色板：
-   `unzip -j "<IDE>/Contents/lib/intellij.platform.ide.impl.jar" "themes/islands/ManyIslandsLight.theme.json"`
-2. 在其 `ui` 中找到目标区域的键，看它引用哪个 token（注意 token 之间的链式引用）；
-3. 在 `ink-light.theme.json` 的 `colors` 里覆盖该 token（优先），仅当父主题
-   硬编码 hex 时才在 `ui` 块加显式键；
-4. 新增 token 前先验证消费链：token 需被父主题 ui 直接引用，或被其他 token
-   传递引用后进 ui，否则是死变量（本主题自己 `ui` 块消费的自定义 token 如
-   `editorBackground` 例外）；
-5. Islands 里找不到该键时，**继续向下层挖**——完整链是 Ink → Islands →
-   ExperimentalLightWithLightHeader → Light（`themes/expUI/expUI_light.theme.json`）
-   → IntelliJ（`themes/intellijlaf.theme.json`），同 jar 内均可解包。底层的
-   纯白/冷灰显式值会绕过 Islands 的 `*` 通配符漏上来（后缀不在通配符列表内
-   时必漏），在 `ui` 块加显式键修补，见「继承泄漏修补」一节；
-6. 两个通配符救不了的硬编码区：`icons.ColorPalette`（Checkbox/Radio）与
-   代码里 `JBColor.namedColor` 的编译期回退值——主题 JSON 全链都没定义的键
-   只能靠显式键压制。
